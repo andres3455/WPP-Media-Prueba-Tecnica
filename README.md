@@ -1,7 +1,7 @@
 # 🏆 Resultados de la Prueba Técnica – Banners Interactivos
 
 Este repositorio contiene la solución completa para la prueba técnica que consistió en desarrollar **banners interactivos** basados en referencias de redes sociales, clima y contenido dinámico.  
-El objetivo fue demostrar habilidades en **HTML, CSS, JavaScript**, integración con **APIs externas**, animaciones y medición de interacciones de usuario.  
+El objetivo fue demostrar mis habilidades en **HTML, CSS, JavaScript**, integración con **APIs externas**, animaciones y medición de interacciones de usuario.  
 
 ---
 
