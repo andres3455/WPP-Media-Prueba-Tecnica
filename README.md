@@ -13,11 +13,16 @@ sumado a eso, personalmente utilizo un plugin llamado LIVESERVER el cual me crea
 
 ### Ejecutar Back
 Para ejecutarlo, se debe crear un ambiente virtual dentro de la ruta AI_SERVICE con este comando 
+
 * python -m venv nombre_del_entorno
+
 Luego se debe activar con este comando
+
 * venv\Scripts\activate
+
 Seguido de eso, se ejecuta el archivo principal con el comando
-*Python server.py
+
+* Python server.py
 
 ## 📌 Retos Incluidos
 
