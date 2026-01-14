@@ -5,6 +5,20 @@ El objetivo fue demostrar mis habilidades en **HTML, CSS, JavaScript**, integrac
 
 ---
 
+## Como ejecutarlo 
+
+### Ejecutar Front
+para ejecutar, se debe clonar este respositorio preferiblemente en VsCode
+sumado a eso, personalmente utilizo un plugin llamado LIVESERVER el cual me crear un servidor local y puedo ver cambios en tiempo real
+
+### Ejecutar Back
+Para ejecutarlo, se debe crear un ambiente virtual dentro de la ruta AI_SERVICE con este comando 
+* python -m venv nombre_del_entorno *
+Luego se debe activar con este comando
+* venv\Scripts\activate *
+Seguido de eso, se ejecuta el archivo principal con el comando
+*Python server.py
+
 ## 📌 Retos Incluidos
 
 ### 1️⃣ Facebook – Video Post
@@ -73,3 +87,4 @@ Se implementaron mecanismos para medir **interacciones del usuario** en todos lo
 Estas métricas se pueden visualizar y analizar para evaluar el **engagement de los banners**.  
 
 ---
+
