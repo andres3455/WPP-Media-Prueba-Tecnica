@@ -73,5 +73,3 @@ Se implementaron mecanismos para medir **interacciones del usuario** en todos lo
 Estas métricas se pueden visualizar y analizar para evaluar el **engagement de los banners**.  
 
 ---
-
-## 📂 Estructura del Proyecto
