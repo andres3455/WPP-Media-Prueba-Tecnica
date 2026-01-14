@@ -1,5 +1,5 @@
 from huggingface_hub import InferenceClient
-from config.settings import HF_API_KEY, DEFAULT_MODEL_TEXT
+from config.config import HF_API_KEY, DEFAULT_MODEL_TEXT
 
 def get_llama_client():
         return InferenceClient(
