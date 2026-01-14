@@ -12,7 +12,9 @@ para ejecutar, se debe clonar este respositorio preferiblemente en VsCode
 sumado a eso, personalmente utilizo un plugin llamado LIVESERVER el cual me crear un servidor local y puedo ver cambios en tiempo real
 
 ### Ejecutar Back
-Dirigete a la rama master y clona el repo en otra ventana de VsCode
+
+* Dirigete a la rama master y clona el repo en otra ventana de VsCode
+
 Para ejecutarlo, se debe crear un ambiente virtual dentro de la ruta AI_SERVICE con este comando 
 
 * python -m venv nombre_del_entorno
