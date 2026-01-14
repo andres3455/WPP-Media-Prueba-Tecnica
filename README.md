@@ -58,7 +58,6 @@ El objetivo fue demostrar habilidades en **HTML, CSS, JavaScript**, integración
 
 ## 🧰 Tecnologías Utilizadas
 - **Lenguajes:** HTML5, CSS3, JavaScript (ES6+)
-- **Frameworks / Librerías:** Vanilla JS, Fetch API
 - **APIs externas:** API de clima para Weather Banner
 - **Herramientas:** Git, VSCode
 - **Otros:** Animaciones CSS, manejo de eventos JS, generación de métricas de interacción  
