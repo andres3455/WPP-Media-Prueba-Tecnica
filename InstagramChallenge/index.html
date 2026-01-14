@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Challenge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="insta-post">
+    <section class="post-carousel">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" name="slide" hidden checked>
+          <div class="slide-item">
+            <a href="https://www.wpp.com/en/companies/wpp-media" target="_blank">
+              <img src="assets/img/img1.jpg" alt="Post 1">
+            </a>
+          </div>
+
+          <input class="slide-open" type="radio" id="slide-2" name="slide" hidden>
+          <div class="slide-item">
+            <a href="https://www.instagram.com/p/DSAjHSljAj2/?img_index=3" target="_blank">
+              <img src="assets/img/img2.jpg" alt="Post 2">
+            </a>
+          </div>
+
+          <input class="slide-open" type="radio" id="slide-3" name="slide" hidden>
+          <div class="slide-item">
+            <a href="https://www.youtube.com/watch?v=ejBoLjFcO3E" target="_blank">
+              <img src="assets/img/img3.jpg" alt="Post 3">
+            </a>
+          </div>
+
+          <input class="slide-open" type="radio" id="slide-4" name="slide" hidden>
+          <div class="slide-item">
+            <a href="https://www.linkedin.com/company/wpp/" target="_blank">
+              <img src="assets/img/img4.jpg" alt="Post 4">
+            </a>
+          </div>
+
+          <!-- CONTROLES DE NAVEGACIÓN -->
+          <label for="slide-4" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-4" class="slide-control next control-3">›</label>
+
+          <label for="slide-3" class="slide-control prev control-4">‹</label>
+          <label for="slide-1" class="slide-control next control-4">›</label>
+
+          <!-- INDICADORES -->
+          <ol class="slide-indicador">
+            <li><label for="slide-1" class="slide-circulo">•</label></li>
+            <li><label for="slide-2" class="slide-circulo">•</label></li>
+            <li><label for="slide-3" class="slide-circulo">•</label></li>
+            <li><label for="slide-4" class="slide-circulo">•</label></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de comentarios -->
+    <aside class="post-comments">
+      <header class="post-header">
+        <img src="assets/img/OIP.webp" alt="Logo" class="banner-logo">
+        <h2>WPP Media</h2>
+      </header>
+
+      <div class="post-description">
+        <p><strong>wppmedia</strong> Commerce media just made history. For the first time, it’s projected to surpass traditional TV ad revenue — according to our latest report.</p>
+        <p>Global advertising overall is on track for <strong>8.8% growth in 2025</strong> and 7.1% in 2026.</p>
+        <p><em>#GlobalTrends #Media2025</em></p>
+      </div>
+
+      <div class="post-comments-list">
+        <p><strong>Andrew_1609</strong> impresionante informe!</p>
+        <p><strong>marketing_team</strong> Excelente análisis </p>
+      </div>
+
+      <footer class="post-footer">
+        <input type="text" placeholder="Agrega un comentario..." class="comment-input">
+      </footer>
+    </aside>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

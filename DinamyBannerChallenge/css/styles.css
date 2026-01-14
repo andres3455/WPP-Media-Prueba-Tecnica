@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Título principal */
+#main-title {
+  font-size: 2rem;
+  color: #f5f4f4;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Contenedor del banner */
+#banner {
+  position: relative;
+  width: 90%;
+  max-width: 350px;
+  height: auto; /* se ajusta según contenido */
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* Imagen del banner centrada arriba */
+#banner-image {
+  width: 80%;
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  border-radius: 8px;
+  z-index: 1;
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Contenido debajo de la imagen */
+.content {
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  z-index: 2;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+/* Botón CTA */
+button {
+  background-color: #ffb703;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd60a;
+  transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive: pantallas pequeñas */
+@media (max-width: 480px) {
+  #main-title {
+    font-size: 1.5rem;
+  }
+
+  #banner {
+    width: 95%;
+    padding-top: 5px;
+  }
+
+  #banner-image {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 0.95rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}

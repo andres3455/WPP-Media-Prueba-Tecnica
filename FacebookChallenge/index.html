@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Post estilo Facebook Watch</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="watch-container" id="banner">
+    <!-- IZQUIERDA: VIDEO -->
+    <section class="video-section">
+      <video controls autoplay id="video" controls>
+        <source src="assets/video/video.mp4" type="video/mp4" />
+      </video>
+
+      <h2 class="video-title">
+        Agent Hub was made possible by Agent Builder Pro
+      </h2>
+
+      <div class="video-actions">
+        <button>👍 Me gusta</button>
+        <button>💬 Comentar</button>
+        <button>↗️ Compartir</button>
+      </div>
+    </section>
+
+    <!-- DERECHA: INFORMACIÓN Y COMENTARIOS -->
+    <aside class="info-section">
+      <div class="page-info">
+        <img src="assets/img/OIP.webp" class="page-avatar" alt="WPP logo" />
+        <div>
+          <strong>WPP</strong>
+          <p class="time">Ahora Mismo</p>
+        </div>
+        <button class="follow-btn">Seguir</button>
+      </div>
+
+      <div class="post-description">
+        <p>
+          Agent Hub was made possible by Agent Builder Pro.
+          <br /><br />
+          Part of WPP Open, it’s the no-code tool our teams and clients use to
+          design, build, and scale best-in-class agents.
+        </p>
+        <p>
+          WPP’s Amelia Gandar and her team are behind some of the agentic
+          solutions that encode ...
+          <a href="#">Ver más</a>
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="comments-container">
+        <h4>Comentarios</h4>
+        <div class="comment">
+          <img src="assets/img/OIP.webp" class="comment-avatar" alt="user" />
+          <div class="comment-content">
+            <strong>Dennis J Shaffner</strong>
+            <p>Pip Pullen</p>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="assets/img/OIP.webp" class="comment-avatar" alt="user" />
+          <div class="comment-content">
+            <strong>María López</strong>
+            <p>¡Impresionante trabajo! 👏</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-input">
+        <img src="assets/img/OIP.webp" alt="you" class="comment-avatar" />
+        <input type="text" placeholder="Escribe un comentario..." />
+      </div>
+    </aside>
+  </div>
+
+<!-- Metricas-->
+  <div id="metrics" class="metricsd">
+    <h4 style="margin: 0 0 8px 0; font-size: 16px;">📊 Métricas del Video</h4>
+  <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
+    <li>▶️ Play: <span id="playCount">0</span></li>
+    <li>⏸️ Pause: <span id="pauseCount">0</span></li>
+    <li>🔇 Mute: <span id="muteCount">0</span></li>
+    <li>🏁 Finalizado: <span id="endedCount">0</span></li>
+    <li>👍 Me gusta: <span id="likeClicks">0</span></li>
+    <li>💬 Comentar: <span id="commentClicks">0</span></li>
+    <li>↗️ Compartir: <span id="shareClicks">0</span></li>
+    <li>🖱️ Interactuado: <span id="interacted">0</span></li>
+  </ul>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

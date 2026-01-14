@@ -1,0 +1,151 @@
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.insta-post {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  max-width: 950px;
+  width: 100%;
+  height: 600px;
+}
+
+/*
+CARRUSEL DE IMÁGENES
+*/
+
+.post-carousel {
+  flex: 1.2;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Controles dentro del carrusel */
+.slide-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide-control.prev { left: 15px; }
+.slide-control.next { right: 15px; }
+
+.slide-control:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* ======= VISIBILIDAD Y NAVEGACIÓN ======= */
+
+/* Oculta todos los slides por defecto */
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+/* Muestra solo el slide activo */
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 1;
+}
+
+/* Por defecto, las flechas están ocultas */
+.slide-control {
+  display: none;
+}
+
+/* Muestra las flechas del slide activo */
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4 {
+  display: block;
+}
+
+
+/*
+SECCION COMENTARIOS
+*/
+
+.post-comments {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-left: 1px solid #ddd;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-description {
+  font-size: 0.9rem;
+  color: #222;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+}
+
+.post-comments-list {
+  flex: 1;
+  overflow-y: auto;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.post-footer {
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+}
+
+.comment-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: #444;
+}
