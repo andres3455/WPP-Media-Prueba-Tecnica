@@ -7,18 +7,29 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Título general del banner -->
-  <h1 id="main-title">Banner Dinamico ADIDAS</h1>
-  <img src="assets/OIP.webp" alt="Imagen del banner" id="banner-image">
+  <!-- Título general -->
+  <h1 id="main-title">Banner Dinámico ADIDAS</h1>
   
-  <div id="banner">
+  <!-- Imagen del banner -->
+  <img src="assets/OIP.webp" alt="Imagen del banner" id="banner-image">
+<div class="banner-wrapper">
+  <!-- Banner del TÍTULO -->
+  <div id="banner-title-container" class="banner">
     <div class="overlay"></div>
     <div class="content">
-      <h2 id="banner-title"></h2>
-      <p id="banner-desc"></p>
+      <h2 id="banner-title">Título</h2>
+    </div>
+  </div>
+
+  <!-- Banner de la DESCRIPCIÓN -->
+  <div id="banner-desc-container" class="banner">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 id="banner-desc">Descripción</h2>
       <button id="banner-cta"></button>
     </div>
   </div>
+</div>
 
   <script src="js/main.js"></script>
 </body>

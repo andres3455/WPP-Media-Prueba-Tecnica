@@ -20,11 +20,10 @@ async function loadBanner() {
   } catch (error) {
     console.error("❌ Error al cargar banner:", error);
     document.getElementById("banner-title").textContent = "Error al cargar el anuncio";
+    document.getElementById("banner-desc").textContent = "Error al cargar descripción";
   }
 }
 
-// -------------------------------
-// Polling cada 10 segundos
-// -------------------------------
+
 loadBanner(); // Carga inicial
 setInterval(loadBanner, 10000); // Cada 10 segundos
