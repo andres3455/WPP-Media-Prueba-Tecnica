@@ -89,8 +89,7 @@ Seguido de eso, se ejecuta el archivo principal con el comando
 ## ⚡ Métricas y Seguimiento
 Se implementaron mecanismos para medir **interacciones del usuario** en todos los banners:
 - Videos: play, pause, mute/unmute.
-- Carrusel: clics en flechas e imágenes.
-- Weather/Dynamic: clic en botones CTA y recarga de contenido dinámico.  
+- Carrusel: clics en flechas e imágenes
 
 Estas métricas se pueden visualizar y analizar para evaluar el **engagement de los banners**.  
 
